@@ -1,6 +1,6 @@
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
-import 'package:podcast/chat/ChatScreen.dart'; //new
+import 'package:podcast/chat/ChatScreen.dart';
 
 class PodcastApp extends StatelessWidget {
   final ThemeData kIOSTheme = ThemeData(
