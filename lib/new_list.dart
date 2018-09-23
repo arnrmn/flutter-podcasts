@@ -44,8 +44,7 @@ class NewsListScreen extends StatelessWidget {
       margin: EdgeInsets.fromLTRB(8.0, 4.0, 8.0, 4.0),
       child: InkWell(
         onTap: () {
-          Navigator.push(context,
-              MaterialPageRoute(builder: (context) => NewsDetailsScreen()));
+          openDetails(context, article);
         },
         child: Row(
           children: <Widget>[
@@ -63,6 +62,13 @@ class NewsListScreen extends StatelessWidget {
           ],
         ),
       ),
+    );
+  }
+
+  void openDetails(BuildContext context, Article article) {
+    Navigator.push(
+      context,
+      MaterialPageRoute(builder: (context) => NewsDetailsScreen(article)),
     );
   }
 }
